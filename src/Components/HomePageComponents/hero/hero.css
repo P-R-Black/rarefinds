@@ -1,0 +1,167 @@
+.indexBackground {
+
+    /* background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* min-height: 70vh;
+    overflow-x: hidden;
+    width: 100vw; */
+    /* filter: brightness(.20); */
+
+    /* background-color: rgba(90, 21, 2, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center; */
+
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* background-image: radial-gradient(#842d0768, #e8690085), url('/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'); */
+    /* background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden; */
+}
+
+.parallaxDiscoverImage {
+    border: 2px solid green;
+    filter: brightness(50%);
+    position: absolute;
+
+}
+
+/* .custom-bg {
+    height: 100%;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#heroSection {
+    width: 100%;
+    height: 100vh;
+}
+
+.homePageContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+
+}
+
+
+.titleContainer h1 {
+    color: var(--light-font-color);
+    font-size: clamp(4rem, 12.5vw, 14.5vw);
+    margin-bottom: -4rem;
+    text-shadow: var(--primary-text-shadow);
+
+}
+
+.titleContainer h2 {
+    color: var(--light-font-color);
+    font-size: clamp(1rem, 4.25vw, 6vw);
+    font-weight: 200;
+    letter-spacing: 4.30rem;
+    text-shadow: var(--primary-text-shadow);
+
+}
+
+.paragraphContainer {
+    display: flex;
+    height: 3rem;
+}
+
+.paragraphContainer p {
+    color: var(--light-font-color);
+    font-size: clamp(.75rem, 2vw, 6vw);
+    text-shadow: var(--primary-text-shadow);
+
+
+
+
+}
+
+.paragraphContainer .words span {
+    animation: spin_words 15s ease infinite;
+    color: var(--light-font-color);
+    display: block;
+    font-size: clamp(.75rem, 2vw, 6vw);
+    height: 3rem;
+    padding-right: 10px;
+    text-align: right;
+    text-shadow: var(--primary-text-shadow);
+
+
+
+
+}
+
+.words {
+    overflow: hidden;
+
+}
+
+
+@keyframes spin_words {
+
+    0% {
+        transform: translateY(0%)
+    }
+
+    10% {
+        transform: translateY(-100%)
+    }
+
+    20% {
+        transform: translateY(-200%)
+    }
+
+    30% {
+        transform: translateY(-300%)
+    }
+
+    40% {
+        transform: translateY(-400%)
+    }
+
+    50% {
+        transform: translateY(-500%)
+    }
+
+    60% {
+        transform: translateY(-600%)
+    }
+
+    70% {
+        transform: translateY(-700%)
+    }
+
+    80% {
+        transform: translateY(-800%)
+    }
+
+    90% {
+        transform: translateY(-900%)
+    }
+
+    100% {
+        transform: translateY(-1000%)
+    }
+}
+
+
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {}

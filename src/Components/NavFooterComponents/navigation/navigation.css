@@ -1,0 +1,23 @@
+header {
+    background-color: var(--primary-bg-color);
+    height: 6rem;
+    align-items: center;
+    display: flex;
+}
+
+.headerContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBarMenu {
+    display: flex;
+    width: 20rem;
+    justify-content: space-around;
+
+}
+
+.navbarItems {
+    color: var(--light-font-color);
+}
