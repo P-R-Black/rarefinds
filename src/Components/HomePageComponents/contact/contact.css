@@ -1,0 +1,69 @@
+.contactSection {
+    background-color: var(--primary-bg-color);
+    min-height: 100vh;
+}
+
+.contactSectionTitle {
+    padding-top: 2.5rem;
+}
+
+
+.contactSectionTitle h2 {
+    color: var(--light-font-color);
+    font-size: clamp(1rem, 4.25vw, 6vw);
+    text-align: center;
+}
+
+.contactOptionContainer {
+    display: grid;
+    grid-template-columns: 65% 25%;
+    gap: 10%;
+    margin-top: 2.5rem;
+    align-items: center;
+    min-height: 90vh
+}
+
+.emailMessengerWhatsAppContainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactOptionsBox {
+    align-items: center;
+    border: 2px solid var(--light-font-color);
+    border-radius: 20px;
+    color: var(--light-font-color);
+    height: 10rem;
+    gap: .5rem;
+    padding: .25rem 0 .25rem 0;
+    width: 16rem;
+
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.contactIcons {
+    height: 1.75rem;
+    margin-bottom: -.5rem;
+    width: 1.75rem;
+
+}
+
+.contactOptionsBox h4 {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.contactOptionsBox a {
+    color: yellow;
+    font-family: 'Poppins';
+    font-weight: 400;
+}

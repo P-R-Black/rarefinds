@@ -1,0 +1,19 @@
+.aboutPhotoContainer {
+    width: 78%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, #ffffff, transparent);
+    display: grid;
+    place-items: center;
+}
+
+.aboutImageContainer {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition-in);
+}
+
+.aboutImageContainer:hover {
+    transform: rotate(0deg);
+}

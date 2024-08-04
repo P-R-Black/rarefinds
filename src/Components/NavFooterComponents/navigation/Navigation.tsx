@@ -1,6 +1,7 @@
 import React, { FormEvent } from 'react'
 import { Logo } from '../logo/Logo'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+
 import './navigation.css'
 
 type Props = {}
@@ -30,8 +31,8 @@ export const Navigation: React.FC<{}> = () => {
                 </div>
                 <nav className="navigationContainer">
                     <ul className="navBarMenu">
-                        <Link to={"/"} className='navbarItems'><h3>{"About"}</h3></Link>
-                        <Link to={"/"} className='navbarItems'><h3>{"Contact"}</h3></Link>
+                        <HashLink to={"/#aboutSection"} className='navbarItems'><h3>{"About"}</h3></HashLink>
+                        <HashLink to={"/#contactSection"} className='navbarItems'><h3>{"Contact"}</h3></HashLink>
                     </ul>
                     <div className="hamburgerMenu" id="mobileMenu" aria-controls="navbarMenu"
                         aria-expanded="false" onClick={showNavMenu}>

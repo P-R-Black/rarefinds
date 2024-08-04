@@ -1,0 +1,74 @@
+.custom-bg {
+    border: 2px dotted slateblue;
+    /* height: 30vh; */
+    /* width: 100vw; */
+
+}
+
+
+.validationContainer {
+    overflow: hidden;
+
+
+
+}
+
+/* .validationContainer[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 95%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 95%, transparent);
+} */
+
+.reviewListUl {
+    animation: reviewScroll linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    padding-block: 1rem;
+    width: max-content;
+
+}
+
+.reviewListUl:hover {
+    animation-play-state: paused;
+}
+
+
+.reviewBox {
+    background-color: var(--primary-bg-color);
+    border-radius: 10px;
+    color: var(--light-font-color);
+    font-family: 'Poppins';
+    font-size: .85rem;
+    height: 10rem;
+    width: 25rem;
+
+    padding: .75rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.reviewBox .custReview {
+    color: yellow;
+    text-align: justify;
+}
+
+.nameLocationContainer {
+    display: flex;
+    gap: .50rem;
+    margin-top: .5rem;
+}
+
+.nameLocationContainer .custName {
+    font-weight: 600;
+    ;
+}
+
+@keyframes reviewScroll {
+    to {
+        transform: translate(-100%)
+    }
+}

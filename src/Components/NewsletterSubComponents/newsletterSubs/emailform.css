@@ -1,0 +1,142 @@
+.emailFormSection {}
+
+
+.emailLabelContainer label {
+    color: var(--light-font-color);
+    font-size: clamp(.85rem, 1.25rem, 6vw);
+    font-weight: 900;
+
+}
+
+
+
+input {
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0.25rem;
+    width: clamp(10rem, 20rem, 60vw);
+    /* width: 20rem; */
+
+}
+
+button.emailButton {
+    padding: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    background-color: transparent;
+    color: var(--light-font-color);
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 5rem;
+}
+
+
+.successContainer {
+    align-items: center;
+    display: flex;
+}
+
+p.successMessage {
+    color: green;
+}
+
+
+.successContainer img {
+    height: 2rem;
+    width: 2rem;
+    animation: rotate-record 4s infinite linear;
+}
+
+/* * * * * * * * * * * * * FOOTER SIGN UP SECTION * * * * * * * * * * * * */
+.footerEmailFormSection {
+    /* width: 22rem; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; */
+}
+
+
+form.footerNewsForm {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+.footerEmailLabelContainer {
+    margin-bottom: -1.5rem;
+}
+
+.footerEmailLabelContainer label {
+    color: var(--light-font-color);
+    font-size: clamp(.95rem, 1.15rem, 6vw);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    width: clamp(14rem, 19rem, 60vw);
+
+
+}
+
+
+input#footerEmail {
+    border-right: 0;
+    padding: 0.30rem;
+    width: clamp(12rem, 17rem, 60vw);
+    border-radius: 5px 0 0 5px;
+
+}
+
+input#footerEmail:focus {
+    outline: none;
+}
+
+button.footerEmailButton {
+    border: 2px solid var(--light-font-color);
+    border-radius: 0 5px 5px 0;
+    color: var(--light-font-color);
+    display: inline-block;
+    width: 2.25rem;
+    height: 2rem;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button.footerEmailButton:active {
+    transform: translateY(1px);
+}
+
+
+.footerSuccessContainer {
+    align-items: center;
+    display: flex;
+}
+
+p.footerSuccessMessage {
+    color: green;
+}
+
+
+.footerSuccessContainer img {
+    height: 2rem;
+    width: 2rem;
+    animation: rotate-record 4s infinite linear;
+}
+
+/* CLSOE OF FOOTER SIGN UP SECTION */
+
+@keyframes rotate-record {
+    from {
+        tranform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}

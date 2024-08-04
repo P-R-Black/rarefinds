@@ -19,11 +19,7 @@
     position: relative;
     width: 100%;
     /* background-image: radial-gradient(#842d0768, #e8690085), url('/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'); */
-    /* background-size: cover;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden; */
+
 }
 
 .parallaxDiscoverImage {
@@ -52,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 
 }
 

@@ -1,0 +1,136 @@
+.contactFormSection {}
+
+.contact_form {}
+
+.input_field {
+    /* display: flex;
+    justify-content: center; */
+    min-width: 70vw;
+
+
+}
+
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+input,
+textarea {
+    background: transparent;
+    border: 2px solid var(--light-font-color);
+    color: var(--light-font-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    resize: none;
+    width: 50%;
+
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+input {
+    height: 2rem;
+    position: relative;
+}
+
+.contact_form {
+    position: relative;
+}
+
+
+
+
+.email_sent {
+    color: var(--light-font-color);
+    font-size: 1.25rem;
+}
+
+.sendMessageButton {
+    padding: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    background-color: transparent;
+    color: var(--light-font-color);
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 10rem;
+    /* transition: var(--transition); */
+}
+
+
+.spinner {
+    animation: spin 1s infinite linear;
+    color: var(--color-bg-bright);
+    height: 2rem;
+    transition: var(--transition);
+    width: 2rem;
+
+
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+    #contact {
+        margin-top: 3rem;
+        min-height: 50vh;
+    }
+
+    input,
+    textarea {
+        width: 75%;
+    }
+
+
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+
+    #contact {
+        margin-top: 3rem;
+        min-height: 50vh;
+    }
+
+    .contact_container {
+        margin-top: 2rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+
+    }
+
+    textarea {
+        height: 10rem;
+    }
+
+
+
+}

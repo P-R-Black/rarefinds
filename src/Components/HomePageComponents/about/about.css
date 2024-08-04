@@ -1,0 +1,39 @@
+.aboutSection {
+    background-color: var(--primary-bg-color);
+    height: 100vh;
+}
+
+.aboutTitleContainer {
+    padding-top: 2.5rem;
+}
+
+.aboutTitleContainer h2 {
+    color: var(--light-font-color);
+    font-size: clamp(1rem, 4.25vw, 6vw);
+    text-align: center;
+}
+
+
+.ownerSection {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 5%;
+    margin-top: 2.5rem;
+
+}
+
+
+.ownerTitleContainer h3 {
+    color: var(--light-font-color);
+    font-size: clamp(1rem, 2.5rem, 6vw);
+    margin-bottom: 1rem;
+}
+
+.ownerParagraphContainer p {
+    color: var(--light-font-color);
+    font-family: "Poppins";
+    margin-bottom: 1rem;
+    font-size: clamp(.85rem, 1.10rem, 6vw);
+    /* font-weight: 900; */
+    text-align: justify;
+}
