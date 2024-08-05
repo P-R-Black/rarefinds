@@ -10,7 +10,7 @@
 
 .contactSectionTitle h2 {
     color: var(--light-font-color);
-    font-size: clamp(1rem, 4.25vw, 6vw);
+    font-size: clamp(2rem, 4.25vw, 6vw);
     text-align: center;
 }
 
@@ -63,7 +63,24 @@
 }
 
 .contactOptionsBox a {
-    color: yellow;
+    color: var(--highlighter-color);
     font-family: 'Poppins';
     font-weight: 400;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .contactOptionContainer {
+        justify-content: center;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+    .emailMessengerWhatsAppContainer {
+
+        align-items: center;
+    }
 }

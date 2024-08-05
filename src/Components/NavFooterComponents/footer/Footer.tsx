@@ -11,7 +11,9 @@ import { Link } from 'react-router-dom';
 
 
 export const Footer = () => {
-    let year = '2024'
+    let date = new Date();
+    let year = date.getFullYear();
+
     return (
         <section className="footerSection">
             <div className="container">

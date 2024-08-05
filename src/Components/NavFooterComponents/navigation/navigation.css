@@ -1,6 +1,6 @@
 header {
     background-color: var(--primary-bg-color);
-    height: 6rem;
+    height: 7rem;
     align-items: center;
     display: flex;
 }
@@ -11,13 +11,120 @@ header {
     justify-content: space-between;
 }
 
-.navBarMenu {
+
+.navigationContainer ul {
     display: flex;
-    width: 20rem;
     justify-content: space-around;
+    width: clamp(10rem, 20rem, 40vw);
+}
+
+.navigationContainer ul h3 {
+    color: var(--light-font-color);
+    font-size: clamp(1.25rem, 1.75vw, 2rem);
+    position: relative;
+    transition: var(--transition-out);
+    pointer-events: all;
+    overflow: hidden;
+}
+
+.navigationContainer ul h3::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    background: yellow;
+    transform: translateX(-50%);
+    transition: .3s
+}
+
+.navigationContainer ul h3:hover {
+    color: yellow;
+}
+
+.navigationContainer ul h3:hover::after {
+    width: 90%;
+}
+
+
+.navigationContainer ul[data-visible="true"] {
+    transform: translateX(0%)
+}
+
+.hamburgerMenu {
+    cursor: pointer;
+    display: None;
+}
+
+
+
+.bar {
+    background-color: white;
+    display: block;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 2rem;
+
+
 
 }
 
-.navbarItems {
-    color: var(--light-font-color);
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .hamburgerMenu {
+        display: block;
+        z-index: 600;
+    }
+
+    .navBarMenu {
+
+        background: var(--primary-bg-color);
+        display: flex;
+        height: 75vh;
+        inset: 10% 0 0 0;
+        flex-direction: column;
+        align-items: center;
+
+        position: fixed;
+        padding: min(15vh, 10rem) 2rem;
+        transform: translateY(-120%);
+        transition: var(--transition-out);
+        z-index: 500;
+        min-width: 100vw;
+
+
+    }
+
+    .navbarMenu[data-visible="true"] {
+        transform: translateX(0%)
+    }
+
+    .hamburgerMenu[aria-expanded="true"] .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerMenu[aria-expanded="true"] .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburgerMenu[aria-expanded="true"] .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navBarMenu .navbarItems h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .navigationContainer ul h3::after {
+
+        top: 24px;
+
+    }
 }

@@ -52,7 +52,7 @@
 
 
 .reviewBox .custReview {
-    color: yellow;
+    color: var(--highlighter-color);
     text-align: justify;
 }
 

@@ -57,7 +57,7 @@ export const EmailFormFooter: React.FC = () => {
                 <div className="footerEmailLabelContainer">
                     <label htmlFor="email">For our weekly newsletter</label>
                 </div>
-                <span className="form-control-wrap">
+                <span className="footerFormControlWrap">
                     <input
                         type="email"
                         id="footerEmail"

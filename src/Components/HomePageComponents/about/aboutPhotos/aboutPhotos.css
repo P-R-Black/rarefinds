@@ -12,8 +12,31 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition-in);
+
 }
 
 .aboutImageContainer:hover {
     transform: rotate(0deg);
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+    .aboutPhotoSection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutPhotoContainer {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .aboutImageContainer {
+        width: 12rem;
+        height: 12rem;
+
+    }
 }

@@ -58,15 +58,17 @@ const EmailForm: React.FC = () => {
                 <div className="emailLabelContainer">
                     <label htmlFor="email">Sign up for our weekly newsletter:</label>
                 </div>
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="email"
-                    value={email}
-                    onChange={handleEmailChange}
-                    required
-                />
-                <button className="emailButton" type="submit">Submit</button>
+                <span className="formControlWrap">
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="email"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
+                    />
+                    <button className="emailButton" type="submit">Submit</button>
+                </span>
             </form>
 
             {message && <div className="successContainer">

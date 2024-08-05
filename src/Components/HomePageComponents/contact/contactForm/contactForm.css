@@ -43,16 +43,22 @@ textarea::placeholder {
     font-size: 1rem;
 }
 
-input {
+.contact_form input {
     height: 2rem;
     position: relative;
+}
+
+.contact_form input:focus {
+    outline: none;
 }
 
 .contact_form {
     position: relative;
 }
 
-
+.contact_form textarea:focus {
+    outline: none;
+}
 
 
 .email_sent {

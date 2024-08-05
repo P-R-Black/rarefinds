@@ -1,34 +1,44 @@
-.emailFormSection {}
-
+.emailFormSection form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 .emailLabelContainer label {
-    color: var(--light-font-color);
+    color: var(--highlighter-color);
     font-size: clamp(.85rem, 1.25rem, 6vw);
     font-weight: 900;
 
 }
 
 
-
-input {
-    border-radius: 5px;
+.formControlWrap input {
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
     font-size: 1rem;
-    margin: 1rem 0 1rem 0;
+    height: 2.5rem;
     padding: 0.25rem;
     width: clamp(10rem, 20rem, 60vw);
-    /* width: 20rem; */
 
 }
 
+
+.formControlWrap input:focus {
+    outline: none;
+}
+
 button.emailButton {
-    padding: 0.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-left: 1rem;
     background-color: transparent;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid var(--light-font-color);
     color: var(--light-font-color);
-    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
     height: 2.5rem;
+
+
+
     width: 5rem;
 }
 
@@ -50,13 +60,7 @@ p.successMessage {
 }
 
 /* * * * * * * * * * * * * FOOTER SIGN UP SECTION * * * * * * * * * * * * */
-.footerEmailFormSection {
-    /* width: 22rem; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; */
-}
+
 
 
 form.footerNewsForm {
@@ -73,22 +77,24 @@ form.footerNewsForm {
 }
 
 .footerEmailLabelContainer label {
-    color: var(--light-font-color);
+    color: var(--highlighter-color);
     font-size: clamp(.95rem, 1.15rem, 6vw);
     font-weight: 400;
     display: flex;
     justify-content: center;
-    width: clamp(14rem, 19rem, 60vw);
-
+    width: clamp(15rem, 21rem, 60vw);
 
 }
 
 
 input#footerEmail {
     border-right: 0;
-    padding: 0.30rem;
-    width: clamp(12rem, 17rem, 60vw);
     border-radius: 5px 0 0 5px;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0.25rem;
+    width: clamp(10rem, 18rem, 60vw);
 
 }
 
@@ -97,15 +103,16 @@ input#footerEmail:focus {
 }
 
 button.footerEmailButton {
+    background-color: var(--highlighter-color);
     border: 2px solid var(--light-font-color);
     border-radius: 0 5px 5px 0;
-    color: var(--light-font-color);
-    display: inline-block;
-    width: 2.25rem;
-    height: 2rem;
-    background-color: transparent;
-    font-size: 1rem;
+
+    color: var(--dark-font-color);
     cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 button.footerEmailButton:active {

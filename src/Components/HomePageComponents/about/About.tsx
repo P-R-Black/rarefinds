@@ -10,7 +10,7 @@ export const About: React.FC = () => {
             <div className="container">
                 <div className="aboutSectionContainer">
                     <div className="aboutTitleContainer">
-                        <h2 className={`aboutTitleContainerH1`}>About</h2>
+                        <h2 className={`aboutTitleContainerH2`}>About Rare Finds</h2>
                     </div>
                     <div className="ownerSection">
                         <div className="ownerAlbumCoverSection">
@@ -47,7 +47,6 @@ export const About: React.FC = () => {
                     </div>
                 </div>
             </div>
-
         </section>
 
     )
