@@ -39,8 +39,11 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div className="footerSiteLinksContainer">
-                            <HashLink to={"/#aboutSection"} className='navbarItems'><h3>{"About"}</h3></HashLink>
-                            <HashLink to={"/#contactSection"} className='navbarItems'><h3>{"Contact"}</h3></HashLink>
+                            <ul>
+                                <HashLink to={"/#aboutSection"} className='navbarItems'><h3>{"About"}</h3></HashLink>
+                                <HashLink to={"/#contactSection"} className='navbarItems'><h3>{"Contact"}</h3></HashLink>
+                            </ul>
+
                         </div>
                         <div className="footerNewsletterContainer">
                             <h3>Newsletter</h3>

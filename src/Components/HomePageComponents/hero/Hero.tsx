@@ -15,7 +15,7 @@ export const Hero = () => {
                     <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImage}
                         renderLayer={percentage => (
                             <div style={{
-                                position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .25})`,
+                                position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .60})`,
                                 left: '0%', top: '0%', width: percentage * 2000, height: percentage * 2000,
                             }}>
 
@@ -25,10 +25,6 @@ export const Hero = () => {
                         <div className="container">
                             <div className="homePageContainer">
                                 <div className="titleContainer">
-                                    <h1 className={`titleContainerH1`}>Rare Finds</h1>
-                                    <h2 className={`titleContainerH1`}>Vinyl Shop</h2>
-                                </div>
-                                <div className="paragraphContainer">
                                     <div className="words">
                                         <span>Jazz</span>
                                         <span>Rock</span>
@@ -40,20 +36,30 @@ export const Hero = () => {
                                         <span>Salsa</span>
                                         <span>City Pop</span>
                                         <span>Classical</span>
+                                        <span>Heavy Metal</span>
+                                        <span>Dance Hall</span>
+                                        <span>Reggae</span>
+                                        <span>Ska</span>
+                                        <span>Bebop</span>
+                                        <span>Techno</span>
+                                        <span>Bossa Nova</span>
+                                        <span>Rancheras</span>
+                                        <span>Country</span>
+                                        <span>Punk Rock</span>
                                         <span>Jazz</span>
                                     </div>
-                                    <p>for collectors and enthusiasts</p>
-
+                                    <h2 className={`titleContainerH2`}>for collectors and enthusiasts</h2>
                                 </div>
                             </div>
                         </div>
                     </Parallax>
-                </section>) : (
-                <section id="heroSection" className="indexBackground">  {/* medium screen size*/}
+                </section>
+            ) : (
+                <section id="heroSection" className="indexBackground"> {/* medium screen size*/}
                     <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImage}
                         renderLayer={percentage => (
                             <div style={{
-                                position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .25})`,
+                                position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .60})`,
                                 left: '0%', top: '0%', width: percentage * 2000, height: percentage * 2000,
                             }}>
 
@@ -63,10 +69,6 @@ export const Hero = () => {
                         <div className="container">
                             <div className="homePageContainer">
                                 <div className="titleContainer">
-                                    <h1 className={`titleContainerH1`}>Rare Finds</h1>
-                                    <h2 className={`titleContainerH2`}>Vinyl Shop</h2>
-                                </div>
-                                <div className="paragraphContainer">
                                     <div className="words">
                                         <span>Jazz</span>
                                         <span>Rock</span>
@@ -78,20 +80,30 @@ export const Hero = () => {
                                         <span>Salsa</span>
                                         <span>City Pop</span>
                                         <span>Classical</span>
+                                        <span>Heavy Metal</span>
+                                        <span>Dance Hall</span>
+                                        <span>Reggae</span>
+                                        <span>Ska</span>
+                                        <span>Bebop</span>
+                                        <span>Techno</span>
+                                        <span>Bossa Nova</span>
+                                        <span>Rancheras</span>
+                                        <span>Country</span>
+                                        <span>Punk Rock</span>
                                         <span>Jazz</span>
                                     </div>
-                                    <p>for collectors and enthusiasts</p>
-
+                                    <h2 className={`titleContainerH2`}>for collectors and enthusiasts</h2>
                                 </div>
                             </div>
                         </div>
                     </Parallax>
-                </section>) : (
-                <section id="heroSection" className="indexBackground">  {/* small screen size*/}
+                </section>
+            ) : (
+                <section id="heroSection" className="indexBackground"> {/* small screen size*/}
                     <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImageMobile}
                         renderLayer={percentage => (
                             <div style={{
-                                position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .25})`,
+                                position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .60})`,
                                 left: '0%', top: '0%', width: percentage * 2000, height: percentage * 2000,
                             }}>
 
@@ -101,10 +113,6 @@ export const Hero = () => {
                         <div className="container">
                             <div className="homePageContainer">
                                 <div className="titleContainer">
-                                    <h1 className={`titleContainerH1`}>Rare Finds</h1>
-                                    <h2 className={`titleContainerH1`}>Vinyl Shop</h2>
-                                </div>
-                                <div className="paragraphContainer">
                                     <div className="words">
                                         <span>Jazz</span>
                                         <span>Rock</span>
@@ -116,17 +124,28 @@ export const Hero = () => {
                                         <span>Salsa</span>
                                         <span>City Pop</span>
                                         <span>Classical</span>
+                                        <span>Heavy Metal</span>
+                                        <span>Dance Hall</span>
+                                        <span>Reggae</span>
+                                        <span>Ska</span>
+                                        <span>Bebop</span>
+                                        <span>Techno</span>
+                                        <span>Bossa Nova</span>
+                                        <span>Rancheras</span>
+                                        <span>Country</span>
+                                        <span>Punk Rock</span>
                                         <span>Jazz</span>
                                     </div>
-                                    <p>for collectors and enthusiasts</p>
-
+                                    <h2 className={`titleContainerH2`}>for collectors and enthusiasts</h2>
                                 </div>
                             </div>
                         </div>
                     </Parallax>
-                </section>)
+                </section>
+            )
             }
 
         </>
     )
 }
+

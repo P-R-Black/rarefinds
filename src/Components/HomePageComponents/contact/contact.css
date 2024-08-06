@@ -36,36 +36,47 @@
     border-radius: 20px;
     color: var(--light-font-color);
     height: 10rem;
+    height: clamp(9rem, 10rem, 16vw);
     gap: .5rem;
     padding: .25rem 0 .25rem 0;
-    width: 16rem;
+    width: clamp(12rem, 17rem, 20vw);
 
     justify-content: center;
 
     display: flex;
     flex-direction: column;
 
+    box-shadow: var(--secondary-shadow);
 
 }
 
 
 
 .contactIcons {
-    height: 1.75rem;
+
+    height: clamp(1rem, 1.75rem, 6vw);
     margin-bottom: -.5rem;
-    width: 1.75rem;
+    width: clamp(1rem, 1.75rem, 6vw);
 
 }
 
+.contactOptionsBox h3 {
+    font-size: clamp(1rem, 1.20rem, 3vw);
+}
+
+
 .contactOptionsBox h4 {
     font-family: 'Poppins';
+    font-size: clamp(.85rem, 1rem, 3vw);
     font-weight: 400;
 }
 
 .contactOptionsBox a {
     color: var(--highlighter-color);
     font-family: 'Poppins';
+    font-size: clamp(.85rem, 1rem, 3vw);
     font-weight: 400;
+    margin-bottom: .25rem;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
@@ -83,4 +94,13 @@
 
         align-items: center;
     }
+
+    .emailMessengerWhatsAppContainer {
+        height: 25vh;
+        margin-top: -2rem;
+        overflow-y: scroll;
+        margin-bottom: 3rem;
+    }
+
+
 }

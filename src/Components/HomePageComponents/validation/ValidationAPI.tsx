@@ -5,7 +5,7 @@ export const customerReviews = [
         customerName: "Kevin",
         customerTitle: "",
         customerLocation: "Missouri, USA",
-        customerReview: "I was looking for the record my parents first danced to at their high school dance as a gift for their 50th anniversary. I called Jim at Rare Finds and I had the record in my hands a week later for a reasonable price. Thanks Jim.",
+        customerReview: "I was looking for the record my parents first danced to at their high school dance as a gift for their 50th anniversary. I called Rare Finds and I had the record in my hands a week later for a reasonable price.",
         dateCreated: "December 1, 2023"
 
     },

@@ -49,7 +49,7 @@ button.emailButton {
 }
 
 p.successMessage {
-    color: green;
+    color: var(--highlighter-color);
 }
 
 
@@ -126,7 +126,7 @@ button.footerEmailButton:active {
 }
 
 p.footerSuccessMessage {
-    color: green;
+    color: var(--highlighter-color);
 }
 
 

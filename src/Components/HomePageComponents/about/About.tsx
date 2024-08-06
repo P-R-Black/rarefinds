@@ -9,7 +9,7 @@ export const About: React.FC = () => {
 
             <div className="container">
                 <div className="aboutSectionContainer">
-                    <div className="aboutTitleContainer">
+                    <div className="sectionTitle">
                         <h2 className={`aboutTitleContainerH2`}>About Rare Finds</h2>
                     </div>
                     <div className="ownerSection">
@@ -23,7 +23,7 @@ export const About: React.FC = () => {
                             <div className="ownerParagraphContainer">
                                 <p>
                                     I’m Jim, owner of Rare Finds. I’ve been collecting vinyl since the 90’s,
-                                    and have been fortunate enough to see my collection surpass over 100,000
+                                    and I have been fortunate enough to see my collection surpass over 100,000
                                     pieces of vinyl. With Rare Finds my goal is to help music fans,
                                     enthusiasts, collectors, producers and others get the vinyl that will
                                     round out their collection or provide inspiration for their next project.

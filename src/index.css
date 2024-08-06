@@ -49,7 +49,7 @@ code {
   --primary-text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
   --light-text-shadow: .5px 0px 1px rgba(0, 0, 0, .25);
 
-  --primary-box-shadow: .35rem .25rem .30rem rgba(0, 0, 0, .20);
+  --primary-box-shadow: 2px 0px 5px rgba(0, 0, 0, 1);
   --secondary-shadow: .35rem .25rem .10rem rgba(0, 0, 0, 0.336);
 }
 
@@ -57,6 +57,18 @@ html {
 
   scroll-behavior: smooth;
 }
+
+.sectionTitle {
+  padding-top: 2.5rem;
+}
+
+.sectionTitle h2 {
+  color: var(--light-font-color);
+  font-size: clamp(2rem, 4.25vw, 6vw);
+  text-shadow: var(--primary-box-shadow);
+  text-align: center;
+}
+
 
 .container {
   width: var(--container-width-lg);

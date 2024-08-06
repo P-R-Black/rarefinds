@@ -33,7 +33,6 @@ export const Validation = () => {
     //             </ul>
     //         </div>
     //     </div> */}
-    console.log('test length', customerReviews.length)
     return (
         <section className="validationSection">
             <Parallax blur={{ min: -15, max: 15 }} strength={500} renderLayer={percentage => (

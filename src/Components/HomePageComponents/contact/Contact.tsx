@@ -12,7 +12,7 @@ export const Contact = () => {
         <section id="contactSection" className="contactSection">
             <div className="container">
                 <div className="contactSectionContainer">
-                    <div className="contactSectionTitle">
+                    <div className="sectionTitle">
                         <h2 className={`contactTitleContainerH1`}>Contact Us</h2>
                     </div>
                     <div className="contactOptionContainer">

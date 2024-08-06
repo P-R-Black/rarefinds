@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* width: fit-content */
+
 }
 
 .footerAddressContainer,
@@ -36,7 +36,7 @@
 .footerPhoneNumberContainer h3 {
     text-align: center;
     font-family: 'Poppins';
-    font-size: clamp(.85rem, 1rem, 16vw);
+    font-size: clamp(.65rem, 1rem, 4vw);
     font-weight: 400;
 }
 
@@ -50,18 +50,43 @@
 
 .footerSocialIcons {
     color: var(--light-font-color);
-    height: 1.25rem;
-    width: 1.25rem;
+    height: clamp(.95rem, 1.25rem, 5vw);
+    width: clamp(.95rem, 1.25rem, 5vw);
 }
 
-.footerSiteLinksContainer {
+.footerSiteLinksContainer ul {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     gap: 2rem;
-    font-size: clamp(.90rem, 1.20rem, 16vw);
+    justify-content: flex-start;
+}
 
+.footerSiteLinksContainer ul h3 {
+    color: var(--light-font-color);
+    font-size: clamp(1.25rem, 1.75vw, 2rem);
+}
+
+.footerSiteLinksContainer ul h3::after {
+    background: var(--highlighter-color);
+    content: '';
+    position: absolute;
+    top: 1.80rem;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    transition: .3s
+}
+
+.footerSiteLinksContainer ul h3:hover {
+    color: var(--highlighter-color);
+}
+
+
+.footerSiteLinksContainer ul h3:hover::after {
+    width: 90%;
 }
 
 
@@ -92,7 +117,37 @@
 }
 
 
-
 .rightsCopyrightContainer {
     color: var(--light-font-color);
+}
+
+.rightsCopyrightContainer h3 {
+    font-size: clamp(.90rem, 1.2rem, 3vw);
+}
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+
+    .topFooterContainer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footerSiteLinksContainer ul {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .footerLogoAddressContainer {
+        order: 1;
+    }
+
+    .footerNewsletterContainer {
+        order: 3
+    }
 }

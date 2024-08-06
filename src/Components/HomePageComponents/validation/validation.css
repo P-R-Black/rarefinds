@@ -1,14 +1,13 @@
-.custom-bg {
-    border: 2px dotted slateblue;
-    /* height: 30vh; */
-    /* width: 100vw; */
-
+.validationSection {
+    min-height: 30vh;
 }
 
-
 .validationContainer {
-    overflow: hidden;
+    align-items: center;
+    display: flex;
+    min-height: 30vh;
 
+    overflow: hidden;
 
 
 }
@@ -39,14 +38,17 @@
     border-radius: 10px;
     color: var(--light-font-color);
     font-family: 'Poppins';
-    font-size: .85rem;
-    height: 10rem;
-    width: 25rem;
+    font-size: clamp(.75rem, .85rem, 6vw);
+    height: clamp(11rem, 13rem, 40vw);
+    width: clamp(22rem, 25rem, 40vw);
 
     padding: .75rem 1.5rem;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    box-shadow: var(--primary-box-shadow);
 
 }
 
