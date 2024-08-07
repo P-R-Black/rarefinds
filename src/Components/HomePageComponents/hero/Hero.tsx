@@ -3,11 +3,11 @@ import './hero.css'
 import { Parallax, Background } from 'react-parallax';
 import heroBgImage from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'
 import heroBgImageMobile from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFindsMobile.png'
+import { HashLink } from 'react-router-hash-link';
 
 
 
 export const Hero = () => {
-
     return (
         <>
             {(window.innerWidth > 600) ? (window.innerWidth > 1080) ? (
@@ -49,6 +49,11 @@ export const Hero = () => {
                                         <span>Jazz</span>
                                     </div>
                                     <h2 className={`titleContainerH2`}>for collectors and enthusiasts</h2>
+                                </div>
+                                <div className="contactButtonBar">
+                                    <button className="heroContactButton">
+                                        <HashLink to={'/#contactSection'}>Contact</HashLink>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -94,6 +99,11 @@ export const Hero = () => {
                                     </div>
                                     <h2 className={`titleContainerH2`}>for collectors and enthusiasts</h2>
                                 </div>
+                                <div className="contactButtonBar">
+                                    <button className="heroContactButton">
+                                        <HashLink to={'/#contactSection'}>Contact</HashLink>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </Parallax>
@@ -137,6 +147,11 @@ export const Hero = () => {
                                         <span>Jazz</span>
                                     </div>
                                     <h2 className={`titleContainerH2`}>for collectors and enthusiasts</h2>
+                                </div>
+                                <div className="contactButtonBar">
+                                    <button className="heroContactButton">
+                                        <HashLink to={'/#contactSection'}>Contact</HashLink>
+                                    </button>
                                 </div>
                             </div>
                         </div>

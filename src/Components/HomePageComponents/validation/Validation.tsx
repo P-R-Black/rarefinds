@@ -51,6 +51,7 @@ export const Validation = () => {
                         <ul className="reviewListUl" style={{ animationDuration: `${(customerReviews.length * 1000) / 20}s` }}>
                             {customerReviews.map((cr) => (
                                 <li className="reviewBox" key={cr.reviewId}>
+                                    <h3>Rare Find Reviews</h3>
                                     <p className="custReview">{cr.customerReview}</p>
                                     <div className="nameLocationContainer">
                                         <p className="custName">{cr.customerName},</p>
@@ -61,6 +62,7 @@ export const Validation = () => {
 
                             {customerReviews.map((cr) => (
                                 <li className="reviewBox" key={cr.reviewId}>
+                                    <h3>Rare Find Reviews</h3>
                                     <p className="custReview">{cr.customerReview}</p>
                                     <div className="nameLocationContainer">
                                         <p className="custName">{cr.customerName}</p>

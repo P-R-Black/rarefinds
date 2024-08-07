@@ -16,8 +16,8 @@
     border-right: 0;
     border-radius: 5px 0 0 5px;
     font-size: 1rem;
-    height: 2.5rem;
-    padding: 0.25rem;
+    height: 3rem;
+    padding: 0.5rem;
     width: clamp(10rem, 20rem, 60vw);
 
 }
@@ -35,7 +35,7 @@ button.emailButton {
     cursor: pointer;
     display: inline-block;
     font-size: 1rem;
-    height: 2.5rem;
+    height: 3rem;
 
 
 
@@ -93,7 +93,7 @@ input#footerEmail {
     height: 3rem;
     font-size: 1rem;
     margin: 1rem 0 1rem 0;
-    padding: 0.25rem;
+    padding: 0.5rem;
     width: clamp(10rem, 18rem, 60vw);
 
 }

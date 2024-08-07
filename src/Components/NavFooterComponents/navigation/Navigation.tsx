@@ -20,11 +20,10 @@ export const Navigation: React.FC<{}> = () => {
             hamburgerMenu?.setAttribute('aria-expanded', 'true')
             navBarMenu?.setAttribute('data-visible', 'true')
         } else {
-            // visibility = "true";
+            visibility = "true";
             navBarMenu?.setAttribute('data-visible', 'false')
             hamburgerMenu?.setAttribute('aria-expanded', 'false')
         }
-
     }
     return (
         <>
@@ -34,11 +33,11 @@ export const Navigation: React.FC<{}> = () => {
                         <Logo />
                     </div>
                     <nav className="navigationContainer">
-                        <ul className="navBarMenu" data-visible="false">
+                        <ul className="navBarMenu" data-visible="false" onClick={showNavMenu}>
                             <HashLink to={"/#aboutSection"} className='navbarItems'><h3>{"About"}</h3></HashLink>
                             <HashLink to={"/#contactSection"} className='navbarItems'><h3>{"Contact"}</h3></HashLink>
                         </ul>
-                        <div className="hamburgerMenu" id="mobileMenu" aria-controls="navBarMenu"
+                        <div className="hamburgerMenu hide" id="mobileMenu" aria-controls="navBarMenu"
                             aria-expanded="false" onClick={showNavMenu}>
                             <span className='bar'></span>
                             <span className='bar'></span>
@@ -56,7 +55,7 @@ export const Navigation: React.FC<{}> = () => {
                             <HashLink to={"/#aboutSection"} className='navbarItems'><h3>{"About"}</h3></HashLink>
                             <HashLink to={"/#contactSection"} className='navbarItems'><h3>{"Contact"}</h3></HashLink>
                         </ul>
-                        <div className="hamburgerMenu" id="mobileMenu">
+                        <div className="hamburgerMenu hide" id="mobileMenu">
                             <span className='bar'></span>
                             <span className='bar'></span>
                             <span className='bar'></span>

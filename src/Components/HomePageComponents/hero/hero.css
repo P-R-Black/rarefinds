@@ -1,34 +1,16 @@
 .indexBackground {
 
-    /* background-size: cover;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: center; */
-    /* min-height: 70vh;
-    overflow-x: hidden;
-    width: 100vw; */
-    /* filter: brightness(.20); */
-    /* background-color: rgba(81, 18, 0, 0.945); */
-    /* background-color: rgba(90, 21, 2, 0.5);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center; */
-
-    /* min-height: 100vh;
+    min-height: 86vh;
     overflow: hidden;
-    position: relative;
-    width: 100%; */
-    /* background-image: radial-gradient(#842d0768, #e8690085), url('/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'); */
+
+    width: 100%;
 
 }
 
 
-
-
-
 #heroSection {
     width: 100%;
-    height: 100vh;
+    height: 86vh;
 }
 
 .homePageContainer {
@@ -36,16 +18,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 86vh;
+    margin-bottom: 5rem;
 
 }
 
 .titleContainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 20.75rem;
     justify-content: center;
-    height: 20rem;
 
 }
 
@@ -55,14 +38,17 @@
     color: var(--light-font-color);
     display: block;
     font-size: clamp(3.75rem, 12.5vw, 14.5vw);
+    height: 17rem;
     text-align: center;
     text-shadow: var(--primary-text-shadow);
-    height: 15rem;
+
+
 
 }
 
 .words {
     overflow: hidden;
+    margin-bottom: -1rem;
 }
 
 
@@ -76,7 +62,33 @@
 
 }
 
+.contactButtonBar {
+    margin-top: 2rem;
+}
 
+.heroContactButton {
+    background-color: var(--highlighter-color);
+    border: 2px solid var(--primary-bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Abril Fatface", serif;
+    font-size: clamp(.85rem, 1.5rem, 5vw);
+    font-weight: 800;
+    height: clamp(2.25rem, 3rem, 6vw);
+    margin-left: 1rem;
+    padding: 0.25rem;
+    box-shadow: var(--primary-box-shadow);
+    width: clamp(8rem, 12rem, 8vw);
+}
+
+.heroContactButton:active {
+
+    transform: translateY(4px);
+}
+
+button.heroContactButton a {
+    color: var(--primary-bg-color);
+}
 
 
 
@@ -186,5 +198,13 @@
     .titleContainer .words span {
 
         height: 8rem;
+    }
+
+    .heroContactButton {
+
+        padding-bottom: 2rem;
+        font-weight: 800;
+        margin-left: 1rem;
+
     }
 }

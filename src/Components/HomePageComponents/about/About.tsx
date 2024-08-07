@@ -23,19 +23,20 @@ export const About: React.FC = () => {
                             <div className="ownerParagraphContainer">
                                 <p>
                                     I’m Jim, owner of Rare Finds. I’ve been collecting vinyl since the 90’s,
-                                    and I have been fortunate enough to see my collection surpass over 100,000
-                                    pieces of vinyl. With Rare Finds my goal is to help music fans,
-                                    enthusiasts, collectors, producers and others get the vinyl that will
-                                    round out their collection or provide inspiration for their next project.
+                                    and have been fortunate enough to see my collection surpass over 100,000
+                                    pieces of vinyl. With more records on my hands than I have the time to listen
+                                    to, I opened Rare Finds with the goal of helping music fans, enthusiasts,
+                                    collectors, producers and others get the vinyl that will round out their
+                                    collection or provide inspiration for their next project.
                                 </p>
                                 <p>
-                                    If you’re looking for a specific record, contact me to discuss availability,
-                                    price, and shipping. If you are interested in selling a vinyl collection or
-                                    are aware of someone who is, let me kow. And if you’re in Amsterdam, stop by and
-                                    check out the shop.
+                                    <strong>If you’re looking for a record</strong>, contact us to discuss
+                                    availability, price, and shipping. If you are interested in selling a vinyl
+                                    collection or are aware of someone who is, let us kow. And if you’re in
+                                    Amsterdam, stop by the shop and enjoy a coffee and some vinyl.
                                 </p>
                                 <p>
-                                    If you want to stay abreast on new inventory, sign up for our newsletter.
+                                    If you want to stay abreast of new inventory, sign up for our newsletter.
                                     Every week I provide subscribers with a list of new records that come into
                                     the shop.
                                 </p>
