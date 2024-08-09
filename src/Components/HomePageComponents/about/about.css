@@ -1,6 +1,7 @@
 .aboutSection {
     background-color: var(--primary-bg-color);
-    height: 100vh;
+    height: 105vh;
+    margin-bottom: 3rem;
 }
 
 .aboutTitleContainer {

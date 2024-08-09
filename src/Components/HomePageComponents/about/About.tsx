@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import EmailForm from '../../NewsletterSubComponents/newsletterSubs/EmailForm';
+import { EmailForm } from '../../NewsletterSubComponents/newsletterSubs/EmailForm';
 import { AboutPhotos } from './aboutPhotos/AboutPhotos';
 
 export const About: React.FC = () => {
@@ -37,8 +37,8 @@ export const About: React.FC = () => {
                                 </p>
                                 <p>
                                     If you want to stay abreast of new inventory, sign up for our newsletter.
-                                    Every week I provide subscribers with a list of new records that come into
-                                    the shop.
+                                    Every week I provide subscribers with a list of new records that have come
+                                    into the shop.
                                 </p>
                             </div>
                             <div className="newsletterContainer">

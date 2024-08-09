@@ -1,8 +1,10 @@
 import React from 'react'
 import './hero.css'
 import { Parallax, Background } from 'react-parallax';
-import heroBgImage from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'
-import heroBgImageMobile from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFindsMobile.png'
+// import heroBgImage from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'
+import heroBgImage2 from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFindsHero.png'
+// import heroBgImageMobile from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFindsMobile.png'
+import heroBgImageMobile2 from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds2Mobile.png'
 import { HashLink } from 'react-router-hash-link';
 
 
@@ -12,7 +14,7 @@ export const Hero = () => {
         <>
             {(window.innerWidth > 600) ? (window.innerWidth > 1080) ? (
                 <section id="heroSection" className="indexBackground"> {/* normal screen size*/}
-                    <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImage}
+                    <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImage2}
                         renderLayer={percentage => (
                             <div style={{
                                 position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .60})`,
@@ -61,7 +63,7 @@ export const Hero = () => {
                 </section>
             ) : (
                 <section id="heroSection" className="indexBackground"> {/* medium screen size*/}
-                    <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImage}
+                    <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImage2}
                         renderLayer={percentage => (
                             <div style={{
                                 position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .60})`,
@@ -110,7 +112,7 @@ export const Hero = () => {
                 </section>
             ) : (
                 <section id="heroSection" className="indexBackground"> {/* small screen size*/}
-                    <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImageMobile}
+                    <Parallax blur={{ min: -15, max: 15 }} strength={500} bgImage={heroBgImageMobile2}
                         renderLayer={percentage => (
                             <div style={{
                                 position: 'absolute', background: `rgba(0, 0, 0, ${percentage * .60})`,

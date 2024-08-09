@@ -8,31 +8,6 @@ import img45s from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/45s.
 
 
 export const Validation = () => {
-    // {/* <div className="container">
-    //         <div className="validationContainer">
-    //             <ul className="reviewListUl" style={{ animationDuration: `${(customerReviews.length * 1000) / 20}s` }}>
-    //                 {customerReviews.map((cr) => (
-    //                     <li className="reviewBox" key={cr.reviewId}>
-    //                         <p className="custReview">{cr.customerReview}</p>
-    //                         <div className="nameLocationContainer">
-    //                             <p className="custName">{cr.customerName},</p>
-    //                             <p className="custLocation">{cr.customerLocation}</p>
-    //                         </div>
-    //                     </li>
-    //                 ))}
-
-    //                 {customerReviews.map((cr) => (
-    //                     <li className="reviewBox" key={cr.reviewId}>
-    //                         <p className="custReview">{cr.customerReview}</p>
-    //                         <div className="nameLocationContainer">
-    //                             <p className="custName">{cr.customerName}</p>
-    //                             <p className="custLocation">{cr.customerLocation}</p>
-    //                         </div>
-    //                     </li>
-    //                 ))}
-    //             </ul>
-    //         </div>
-    //     </div> */}
     return (
         <section className="validationSection">
             <Parallax blur={{ min: -15, max: 15 }} strength={500} renderLayer={percentage => (
@@ -74,7 +49,6 @@ export const Validation = () => {
                     </div>
                 </div>
             </Parallax>
-
         </section>
     )
 }

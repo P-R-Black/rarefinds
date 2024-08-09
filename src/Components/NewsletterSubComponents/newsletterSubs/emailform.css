@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
 }
 
 .emailLabelContainer label {
@@ -50,14 +51,40 @@ button.emailButton {
 
 p.successMessage {
     color: var(--highlighter-color);
+    margin-top: .5rem;
+}
+
+p.errorMessage {
+    color: rgb(251, 116, 116);
+    margin-top: .5rem;
 }
 
 
 .successContainer img {
-    height: 2rem;
-    width: 2rem;
     animation: rotate-record 4s infinite linear;
+    height: 2rem;
+    margin-top: 1rem;
+    width: 2rem;
+
 }
+
+.recaptchaBox {
+    margin-top: 1rem;
+}
+
+
+span.wpcf7-form-control-wrap.recaptcha {
+    border: 3px solid red;
+}
+
+.rc-anchor-pt {
+    border: 3px solid green;
+}
+
+#recaptcha-anchor-label {
+    border: 2px solid yellow;
+}
+
 
 /* * * * * * * * * * * * * FOOTER SIGN UP SECTION * * * * * * * * * * * * */
 
@@ -127,13 +154,21 @@ button.footerEmailButton:active {
 
 p.footerSuccessMessage {
     color: var(--highlighter-color);
+    margin-top: 1rem;
+}
+
+p.footerErrorMessage {
+    color: rgb(251, 116, 116);
+    margin-top: 1rem;
 }
 
 
 .footerSuccessContainer img {
-    height: 2rem;
-    width: 2rem;
     animation: rotate-record 4s infinite linear;
+    height: 2rem;
+    margin-top: 1rem;
+    width: 2rem;
+
 }
 
 /* CLSOE OF FOOTER SIGN UP SECTION */
@@ -147,3 +182,10 @@ p.footerSuccessMessage {
         transform: rotate(360deg)
     }
 }
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {}
