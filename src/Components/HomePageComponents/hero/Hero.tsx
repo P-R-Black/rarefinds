@@ -1,9 +1,7 @@
 import React from 'react'
 import './hero.css'
-import { Parallax, Background } from 'react-parallax';
-// import heroBgImage from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds.png'
+import { Parallax } from 'react-parallax';
 import heroBgImage2 from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFindsHero.png'
-// import heroBgImageMobile from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFindsMobile.png'
 import heroBgImageMobile2 from '/Users/paulblack/VS Code/RareFinds/rarefinds/src/Assets/rareFinds2Mobile.png'
 import { HashLink } from 'react-router-hash-link';
 

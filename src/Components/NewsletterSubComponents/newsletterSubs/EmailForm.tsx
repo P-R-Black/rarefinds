@@ -12,7 +12,8 @@ const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY as string;
 export const EmailForm: React.FC = () => {
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
-    const [errorMessage, setErrorMessage] = useState<string>('')
+    const [errorMessage, setErrorMessage] = useState<string>('');
+    const [showReCaptcha, setShowRecaptcha] = useState(false);
 
     const disabledButton = email.length < 6
 
@@ -34,8 +35,15 @@ export const EmailForm: React.FC = () => {
         }
     }
     const handleEmailChange = async (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value)
-        validateEmail(email)
+        const emailValue = event.target.value;
+        setEmail(emailValue)
+        validateEmail(emailValue)
+
+        if (emailValue.includes('@')) {
+            setShowRecaptcha(true)
+        } else {
+            setShowRecaptcha(false)
+        }
     }
 
 
@@ -45,9 +53,9 @@ export const EmailForm: React.FC = () => {
         setErrorMessage("")
         validateEmail(email);
 
-        let recaptchaValue;
-        console.log('let recaptchaValue:', recaptchaValue);
 
+
+        let recaptchaValue;
         if (recaptchaRef.current) {
             recaptchaValue = recaptchaRef.current.getValue();
             console.log('ReCAPTCHA value:', recaptchaValue);
@@ -122,14 +130,13 @@ export const EmailForm: React.FC = () => {
                         required
                     />
                     <button disabled={disabledButton} className="emailButton" type="submit">Submit</button>
-                    <ReCAPTCHA
+                    {showReCaptcha && (<ReCAPTCHA
                         className="recaptchaBox"
                         ref={recaptchaRef}
                         sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                    />
+                    />)}
                 </span>
             </form>
-
         </section>
     );
 

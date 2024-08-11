@@ -1,10 +1,7 @@
 .indexBackground {
-
     min-height: 86vh;
     overflow: hidden;
-
     width: 100%;
-
 }
 
 
@@ -185,7 +182,14 @@ button.heroContactButton a {
 
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+
+
+    .titleContainer {
+        height: 12.5rem;
+    }
+
+}
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media screen and (max-width: 600px) {

@@ -20,7 +20,20 @@
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+
+    .aboutPhotoContainer {
+        width: 108%;
+
+    }
+
+    .aboutImageContainer {
+
+        width: 15rem;
+        aspect-ratio: 1/1;
+    }
+
+}
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media screen and (max-width: 600px) {

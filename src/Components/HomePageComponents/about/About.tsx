@@ -9,7 +9,7 @@ export const About: React.FC = () => {
 
             <div className="container">
                 <div className="aboutSectionContainer">
-                    <div className="sectionTitle">
+                    <div className="aboutTitleContainer">
                         <h2 className={`aboutTitleContainerH2`}>About Rare Finds</h2>
                     </div>
                     <div className="ownerSection">

@@ -70,9 +70,14 @@ p.errorMessage {
 
 .recaptchaBox {
     margin-top: 1rem;
+
 }
 
 
+
+
+
+/* 
 span.wpcf7-form-control-wrap.recaptcha {
     border: 3px solid red;
 }
@@ -83,7 +88,7 @@ span.wpcf7-form-control-wrap.recaptcha {
 
 #recaptcha-anchor-label {
     border: 2px solid yellow;
-}
+} */
 
 
 /* * * * * * * * * * * * * FOOTER SIGN UP SECTION * * * * * * * * * * * * */

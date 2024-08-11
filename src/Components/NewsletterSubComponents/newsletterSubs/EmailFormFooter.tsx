@@ -13,6 +13,8 @@ export const EmailFormFooter: React.FC = () => {
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
     const [errorMessage, setErrorMessage] = useState<string>('')
+    const [showReCaptcha, setShowRecaptcha] = useState(false);
+
     const disabledButton = email.length < 6
     const recaptchaRef = useRef<ReCAPTCHA | null>(null);
 
@@ -30,15 +32,20 @@ export const EmailFormFooter: React.FC = () => {
         }
     }
     const handleEmailChange = async (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value)
-        validateEmail(email)
+        const emailValue = event.target.value;
+        setEmail(emailValue)
+        validateEmail(emailValue)
+
+        if (emailValue.includes('@')) {
+            setShowRecaptcha(true)
+        } else {
+            setShowRecaptcha(false)
+        }
     }
 
-    const showHideCaptcha = document.querySelector('.recaptchaBox')
+
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-
-        console.log('showHideCaptcha', showHideCaptcha)
         setMessage("")
         setErrorMessage("")
         validateEmail(email);
@@ -118,11 +125,11 @@ export const EmailFormFooter: React.FC = () => {
                     <button disabled={disabledButton} className="footerEmailButton" type="submit">
                         <FaChevronRight />
                     </button>
-                    <ReCAPTCHA
+                    {showReCaptcha && (<ReCAPTCHA
                         className="recaptchaBox"
                         ref={recaptchaRef}
                         sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                    />
+                    />)}
                 </span>
             </form>
         </section>
