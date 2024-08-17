@@ -1,10 +1,17 @@
+.aboutPhotoSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .aboutPhotoContainer {
-    width: 78%;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
     background: linear-gradient(45deg, transparent, #ffffff, transparent);
+    border-radius: 2rem;
     display: grid;
     place-items: center;
+    width: 78%;
 }
 
 .aboutImageContainer {
@@ -17,6 +24,12 @@
 
 .aboutImageContainer:hover {
     transform: rotate(0deg);
+}
+
+
+.aboutPhotoSection figcaption {
+    color: var(--light-font-color);
+    margin-top: 1.5rem;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */

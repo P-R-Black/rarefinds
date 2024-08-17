@@ -38,20 +38,35 @@ export const ContactForm: React.FC = () => {
     }
     return (
         <section id="contactForm" className='contactFormSection'>
-            <form ref={form} onSubmit={sendContact} className="contact_form">
+            <form
+                ref={form}
+                onSubmit={sendContact}
+                className="contact_form"
+                aria-busy={isLoading}
+                aria-live="assertive"
+            >
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label htmlFor='name'>Name</label>
+                    <input className="inputName" type="text" name="name" placeholder="Your Name" required />
 
-                <input className="inputName" type="text" name="name" placeholder="Your Name" required />
-                <input className="inputEmail" type="email" name="email" placeholder="Your Email" required />
-                <textarea className="inputMessage" name="message" placeholder="Your Message" id="" required />
+                    <label htmlFor='email'>Email</label>
+                    <input className="inputEmail" type="email" name="email" placeholder="Your Email" required />
 
-                <div className='email_sent'>{contactRequest}</div>
-                {isLoading ? <CgSpinnerTwo className='spinner' /> : ""}
+                    <label htmlFor='message'>Message</label>
+                    <textarea className="inputMessage" name="message" placeholder="Your Message" id="" required />
 
-                <button type="submit" className='sendMessageButton'
-                    onClick={isPending}>
-                    Send Message
-                </button>
+                    <div className='email_sent' aria-live="polite">{contactRequest}</div>
+                    {isLoading ? <CgSpinnerTwo className='spinner' aria-label="Loading" /> : ""}
 
+                    <button
+                        type="submit"
+                        className='sendMessageButton'
+                        aria-label="Send Message"
+                        onClick={isPending}>
+                        Send Message
+                    </button>
+                </fieldset>
             </form>
 
         </section>

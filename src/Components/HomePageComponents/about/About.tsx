@@ -5,7 +5,7 @@ import { AboutPhotos } from './aboutPhotos/AboutPhotos';
 
 export const About: React.FC = () => {
     return (
-        <section id="aboutSection" className="aboutSection">
+        <section id="aboutSection" className="aboutSection" aria-label="aboutTitle">
 
             <div className="container">
                 <div className="aboutSectionContainer">
@@ -20,7 +20,7 @@ export const About: React.FC = () => {
                             <div className="ownerTitleContainer">
                                 <h3>Owner / Proprietor / Collector</h3>
                             </div>
-                            <div className="ownerParagraphContainer">
+                            <div className="ownerParagraphContainer" aria-labelledby="ownerTitle">
                                 <p>
                                     I’m Jim, owner of Rare Finds. I’ve been collecting vinyl since the 90’s,
                                     and have been fortunate enough to see my collection surpass over 100,000
@@ -42,13 +42,12 @@ export const About: React.FC = () => {
                                 </p>
                             </div>
                             <div className="newsletterContainer">
-                                <EmailForm />
+                                <EmailForm aria-label="Newsletter signup form" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     )
 }

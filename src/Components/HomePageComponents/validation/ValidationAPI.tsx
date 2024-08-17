@@ -36,7 +36,7 @@ export const customerReviews = [
         customerName: "Volume Magazine",
         customerTitle: "",
         customerLocation: "Australia",
-        customerReview: "If you're a vinyl collector, music enthusiasts or just someone that misses walking around a record shop, you need to make a trip to Rare Finds.",
+        customerReview: "If you're a vinyl collector, music enthusiasts or someone that misses walking around a record shop, you need to make a trip to Rare Finds.",
         dateCreated: "March 3, 2024"
 
     },
@@ -49,6 +49,16 @@ export const customerReviews = [
         customerLocation: "New York, NY",
         customerReview: "Anytime we book a commercial shoot, if it requires music, we call Jim for recommendations and he never lets us down.",
         dateCreated: "June 20, 2024"
+
+    },
+    {
+
+        reviewId: 6,
+        customerName: "Tech, Primetime Productions",
+        customerTitle: "",
+        customerLocation: "Johannesburg",
+        customerReview: "My favorite record store in the world.",
+        dateCreated: "July 14, 2024"
 
     },
 

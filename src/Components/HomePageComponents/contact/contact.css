@@ -39,7 +39,7 @@
     height: clamp(9rem, 10rem, 16vw);
     gap: .5rem;
     padding: .25rem 0 .25rem 0;
-    width: clamp(12rem, 17rem, 20vw);
+    width: clamp(15rem, 17rem, 20vw);
 
     justify-content: center;
 
@@ -84,14 +84,18 @@
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media screen and (max-width: 600px) {
+
     .contactOptionContainer {
-        justify-content: center;
-        grid-template-columns: 100%;
         align-items: center;
+        grid-template-columns: 100%;
+        justify-content: center;
+
+        padding-bottom: 5rem;
+
+
     }
 
     .emailMessengerWhatsAppContainer {
-
         align-items: center;
     }
 

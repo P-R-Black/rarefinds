@@ -58,6 +58,7 @@
 
     .aboutSectionContainer {
         margin-top: 12rem;
+
     }
 
     .ownerSection {
@@ -73,6 +74,8 @@
         overflow-y: scroll;
         padding-bottom: 2rem;
         height: 45vh;
+
+        padding-bottom: 5rem;
 
     }
 }
