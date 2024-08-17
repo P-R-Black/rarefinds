@@ -25,3 +25,8 @@ yarn-error.log*
 
 # .env
 .env
+
+
+# ssh root@162.243.168.128
+# cat /etc/nginx/sites-enabled/rarefinds.paulrblack.com
+# scp -r ./build/* root@162.243.168.128:/var/www/rarefinds.paulrblack.com/html
