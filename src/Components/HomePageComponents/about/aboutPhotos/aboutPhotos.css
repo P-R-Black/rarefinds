@@ -11,7 +11,9 @@
     border-radius: 2rem;
     display: grid;
     place-items: center;
-    width: 78%;
+    min-height: 78%;
+    width: 83%;
+
 }
 
 .aboutImageContainer {
@@ -24,7 +26,9 @@
 
 .aboutImageContainer:hover {
     transform: rotate(0deg);
+
 }
+
 
 
 .aboutPhotoSection figcaption {

@@ -30,9 +30,9 @@ export const About: React.FC = () => {
                                     collection or provide inspiration for their next project.
                                 </p>
                                 <p>
-                                    <strong>If you’re looking for a record</strong>, contact us to discuss
+                                    <strong style={{ color: "#fef100" }}>If you’re looking for a record</strong>, contact us to discuss
                                     availability, price, and shipping. If you are interested in selling a vinyl
-                                    collection or are aware of someone who is, let us kow. And if you’re in
+                                    collection or are aware of someone who is, let us know. And if you’re in
                                     Amsterdam, stop by the shop and enjoy a coffee and some vinyl.
                                 </p>
                                 <p>
