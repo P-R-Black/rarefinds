@@ -11,9 +11,7 @@
     border-radius: 2rem;
     display: grid;
     place-items: center;
-    min-height: 78%;
-    width: 83%;
-
+    width: 78%;
 }
 
 .aboutImageContainer {
@@ -21,6 +19,7 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition-in);
+
 
 }
 

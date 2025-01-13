@@ -1,46 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RareFinds
 
-## Available Scripts
+A landing page for a vinyl shop. The page was established to build a web presence and collect emails in order to distribute a weekly newsletter regarding the store's inventory and news surrounding vintage music.
 
-In the project directory, you can run:
 
-### `npm start`
+## Reason for Creating
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a three section website that started from a client's desire to have a web presence for his record shop.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The website was configured with a hero section, an about section and a contact section. The site owner also wanted to collect email addresses in order to distribute a weekly newsletter, which will provide subscribers with information on newly acquired records that the owner is willing to sell.
 
-### `npm test`
+A full-fledged e-commerce site that allowed people to search, select, and purchase records would have been ideal, but the client preferred a small site that allowed other record collectors from around the world to contact him.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Note: The name of the site, the image used and owners name have been changed for my portfolio.
+## Demo
 
-### `npm run build`
+- https://rarefinds.paulrblack.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Logo](https://res.cloudinary.com/prblack/image/upload/v1736691059/RFFavicon_eli4cn.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- Email capture using Mailer Lite.
+- Google reCAPTCHA
+- Contact form.
+- Contact by email, Messenger or WhatsApp
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Lessons Learned
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **TypeScript**
+This was the first time using TypeScript on a project. Understanding the TypeScript errors did take some time to comprehend and correct, but it was worth it. On my last React.js project, I spent a lot of time towards the end of the project cleaning up small bugs that prevented the app from working properly, especially when the site went live. TypeScript pointed these errors out as soon as they occurred, which saved me a lot of time in the end.
 
-## Learn More
+- **Email collection without a backend**
+Another small issue with building this site was figuring out a way to collect emails to a list. MailChimp was the first option that came to mind. I eventually learned that in order to use the MailChimp API, I would need a backend component for the site. In the end, I settled on Mailer Lite. The setup wasn't difficult, and it met all of the clients needs.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech Stack
+
+**Client** React, TypeScript, CSS, HTML
+
+**Hosting:** Digital Ocean
+
